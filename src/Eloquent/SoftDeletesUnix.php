@@ -1,6 +1,6 @@
 <?php
 
-namespace Alone\LaravelSoftDeletesUnix\Eloquent;
+namespace Itime\LaravelSoftDeletesUnix\Eloquent;
 
 trait SoftDeletesUnix
 {

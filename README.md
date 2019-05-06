@@ -1,15 +1,16 @@
 # Laravel SoftDeletes With Unix Timestamp
+### forked from [al-one/laravel-soft-deletes-unix](https://github.com/al-one/laravel-soft-deletes-unix)
 
 ## Installing
 
 ```sh
-$ composer require al-one/laravel-soft-deletes-unix -vvv
+$ composer require itime/laravel-soft-deletes-unix -vvv
 ```
 
 or 
 
 ```sh
-$ composer require al-one/laravel-soft-deletes-unix:dev-master -vvv
+$ composer require itime/laravel-soft-deletes-unix:dev-master -vvv
 ```
 
 
@@ -21,7 +22,7 @@ $ composer require al-one/laravel-soft-deletes-unix:dev-master -vvv
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Alone\LaravelSoftDeletesUnix\Eloquent\SoftDeletesUnix;
+use Itime\LaravelSoftDeletesUnix\Eloquent\SoftDeletesUnix;
 
 class Flight extends Model
 {

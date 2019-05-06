@@ -1,6 +1,6 @@
 <?php
 
-namespace Alone\LaravelSoftDeletesUnix\Eloquent;
+namespace Itime\LaravelSoftDeletesUnix\Eloquent;
 
 use Illuminate\Database\Eloquent\Scope;
 use Illuminate\Database\Eloquent\Model;
@@ -59,7 +59,9 @@ class SoftDeletingUnixScope implements Scope
      */
     protected function getDeletedAtColumn(Builder $builder)
     {
-        if (count($builder->getQuery()->joins) > 0) {
+        $joins = $builder->getQuery()->joins;
+        $joins = $joins ? $joins : array();
+        if (count($joins) > 0) {
             return $builder->getModel()->getQualifiedDeletedAtColumn();
         }
         return $builder->getModel()->getDeletedAtColumn();
