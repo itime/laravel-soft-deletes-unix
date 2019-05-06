@@ -4,8 +4,8 @@
     "keywords": ["laravel", "eloquent"],
     "authors": [
         {
-            "name": "Alone",
-            "email": "mail@anlong.me"
+            "name": "itime",
+            "email": "me@liaozhiwei.com"
         }
     ],
     "require": {
@@ -14,7 +14,7 @@
 
     "autoload": {
         "psr-4": {
-            "Alone\\LaravelSoftDeletesUnix\\Eloquent\\": "src/Eloquent/"
+            "Itime\\LaravelSoftDeletesUnix\\Eloquent\\": "src/Eloquent/"
         }
     },
     "license": "MIT"
